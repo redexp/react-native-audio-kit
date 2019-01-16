@@ -1,0 +1,59 @@
+{
+  "_args": [
+    [
+      "git+https://gitlab.intecracy.com/LabArchives/react-native-audio-kit.git",
+      "/Users/oleksiikolomatskiy/Documents/Project/labarchives_new_router/LabArchives"
+    ]
+  ],
+  "_from": "git+https://gitlab.intecracy.com/LabArchives/react-native-audio-kit.git",
+  "_id": "react-native-audio-kit@git+https://gitlab.intecracy.com/LabArchives/react-native-audio-kit.git#204d7e73dc5613efe80b09936623582edb8e633e",
+  "_inBundle": false,
+  "_inCache": true,
+  "_integrity": "",
+  "_location": "/react-native-audio-kit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://gitlab.intecracy.com/LabArchives/react-native-audio-kit.git",
+    "rawSpec": "git+https://gitlab.intecracy.com/LabArchives/react-native-audio-kit.git",
+    "saveSpec": "git+https://gitlab.intecracy.com/LabArchives/react-native-audio-kit.git",
+    "fetchSpec": "https://gitlab.intecracy.com/LabArchives/react-native-audio-kit.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://gitlab.intecracy.com/LabArchives/react-native-audio-kit.git#204d7e73dc5613efe80b09936623582edb8e633e",
+  "_shasum": "b80a91752f6c0a7a5ab6ca35cab31ebe2d396098",
+  "_shrinkwrap": null,
+  "_spec": "git+https://gitlab.intecracy.com/LabArchives/react-native-audio-kit.git",
+  "_where": "/Users/oleksiikolomatskiy/Documents/Project/labarchives_new_router/LabArchives",
+  "dependencies": {},
+  "description": "React Native extension for playing and recording audio",
+  "devDependencies": {},
+  "directories": {},
+  "files": [
+    "ios/AudioRecorderManager.m",
+    "ios/AudioRecorderManager.h",
+    "ios/AudioPlayerManager.m",
+    "ios/AudioPlayerManager.h",
+    "ios/RNAudio.xcodeproj",
+    "README.md",
+    "LICENSE",
+    "index.js",
+    "android/*"
+  ],
+  "gitHead": "5b947e5669e2f95fd2b3576c25d6c4c72f65b362",
+  "keywords": [
+    "react-native",
+    "audio",
+    "record",
+    "play"
+  ],
+  "main": "index.js",
+  "name": "react-native-audio-kit",
+  "nativePackage": true,
+  "optionalDependencies": {},
+  "scripts": {},
+  "version": "0.0.4"
+}

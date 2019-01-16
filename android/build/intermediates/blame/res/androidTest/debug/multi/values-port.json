@@ -1,0 +1,50 @@
+[
+    {
+        "outputFile": "/Users/gregorygl/workspace/react-native/Labarchives/test/mobile/LabArchives/node_modules/react-native-audio-kit/android/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-port/values-port.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "/Users/gregorygl/.android/build-cache/70905532a0307d7212f844a4b60dd28a5ccbc760/output/res/values-port/values-port.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 287,
+                        "endColumn": 55,
+                        "endOffset": 338
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/gregorygl/workspace/react-native/Labarchives/test/mobile/LabArchives/node_modules/react-native-audio-player-recorder/android/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-port/values-port.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "/Users/gregorygl/.android/build-cache/70905532a0307d7212f844a4b60dd28a5ccbc760/output/res/values-port/values-port.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 287,
+                        "endColumn": 55,
+                        "endOffset": 338
+                    }
+                }
+            }
+        ]
+    }
+]
