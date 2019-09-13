@@ -171,7 +171,7 @@ class AudioPlayerManager extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void play(String path, ReadableMap playbackSettings, final Promise promise) {
+  public void play(String path, final ReadableMap playbackSettings, final Promise promise) {
     if (path == null) {
       Log.e("INVALID_PATH", "Please set valid path");
       promise.reject("INVALID_PATH", "Please set valid path");
@@ -191,10 +191,8 @@ class AudioPlayerManager extends ReactContextBaseJavaModule {
       isPaused = false;
       stopTimer();
     }
-    mediaPlayer = new MediaPlayer();
-    mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-    setAudioOutput(playbackSettings);
-    playMedia("local", path, promise);
+
+    playMedia("local", path, playbackSettings, promise);
     isPlaying = true;
     isPaused = false;
     return;
@@ -217,7 +215,7 @@ class AudioPlayerManager extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void playWithUrl(String url, ReadableMap playbackOptions, final Promise promise) {
+  public void playWithUrl(String url, final ReadableMap playbackSettings, final Promise promise) {
     if (isPlaying) {
       Log.e("INVALID_STATE", "Please wait for previous playback to finish.");
       promise.reject("INVALID_STATE", "Please set valid path");
@@ -227,18 +225,20 @@ class AudioPlayerManager extends ReactContextBaseJavaModule {
       unpause(promise);
       return;
     }
-    playMedia("remote", url, promise);
+    playMedia("remote", url, playbackSettings, promise);
     sendEvent("playerFinished", null);
     isPlaying = true;
     isPaused = false;
     return;
   }
 
-  private void playMedia(String type, final String path, final Promise promise) {
+  private void playMedia(String type, final String path, final ReadableMap playbackSettings, final Promise promise) {
     boolean playbackReady = preparePlaybackAtPath(type, path, promise);
     if (!playbackReady) {
       return;
     }
+
+    setAudioOutput(playbackSettings);
 
     mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
       public void onCompletion(MediaPlayer mp) {
